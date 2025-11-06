@@ -1,0 +1,349 @@
+:root {
+  --bg: #0b1020;
+  --card: #0f1530;
+  --muted: #a6b0d4;
+  --text: #eef1ff;
+  --accent: #7c9dff;
+  --accent-2: #6cf1c6;
+  --danger: #ff6b6b;
+  --ok: #50e3a4;
+  --ring: #26305c;
+  --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+  --radius: 16px;
+}
+
+* {
+  box-sizing: border-box
+}
+
+html,
+body {
+  height: 100%
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans";
+  color: var(--text);
+  background: radial-gradient(80% 60% at 20% 0%, #1b2147 0%, #0b1020 60%) fixed;
+  overflow: hidden;
+  /* penting: batasi scroll di body, biar hanya .scroll-area yang scroll */
+}
+
+.bg-shapes {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(600px 300px at 85% -10%, rgba(124, 157, 255, .25), transparent 60%),
+    radial-gradient(500px 260px at -10% 20%, rgba(108, 241, 198, .18), transparent 60%),
+    radial-gradient(400px 220px at 90% 90%, rgba(255, 255, 255, .06), transparent 60%);
+  filter: saturate(120%);
+}
+
+/* Root layout: header fixed, content scroll */
+.app-root {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  /* header lalu konten scroll */
+}
+
+.top-panel {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
+}
+
+.scroll-area {
+  min-height: 0;
+  /* agar overflow bekerja pada grid child */
+  overflow: auto;
+  padding: 0 16px 24px;
+}
+
+/* Reusable cards */
+.card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, .02), rgba(255, 255, 255, .005));
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(6px);
+  margin: 16px;
+}
+
+.site-header {
+  text-align: center;
+  padding: 8px 8px 0;
+}
+
+.site-header h1 {
+  margin: 0 0 6px;
+  font-size: clamp(24px, 3vw, 40px);
+  letter-spacing: .5px;
+}
+
+.site-header p {
+  margin: 0;
+  color: var(--muted)
+}
+
+.intro-grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 12px;
+  grid-template-columns: 1.6fr .8fr;
+}
+
+@media (max-width: 780px) {
+  .intro-grid {
+    grid-template-columns: 1fr
+  }
+}
+
+.checklist {
+  margin: 8px 0 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.checklist li {
+  margin: 6px 0
+}
+
+.meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: flex-end;
+}
+
+.meta-pill {
+  background: linear-gradient(180deg, rgba(124, 157, 255, .18), rgba(124, 157, 255, .08));
+  border: 1px solid rgba(124, 157, 255, .35);
+  border-radius: 999px;
+  padding: 10px 14px;
+  color: #e8ecff;
+  font-size: 14px;
+}
+
+.progress {
+  width: 100%;
+  height: 10px;
+  background: var(--ring);
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 12px 0 6px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  transition: width .35s ease;
+}
+
+.progress-text {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0 16px 8px
+}
+
+/* Soal */
+.q-card {
+  padding: 16px;
+  border-radius: 12px;
+  margin: 16px 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, .02), rgba(255, 255, 255, .01));
+  border: 1px solid rgba(255, 255, 255, .06);
+}
+
+.q-title {
+  margin: 0 0 10px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.q-index {
+  opacity: .75;
+  margin-right: 8px;
+  color: var(--accent-2)
+}
+
+.passage {
+  color: #e6e9ff;
+  line-height: 1.65;
+}
+
+.options {
+  display: grid;
+  gap: 10px
+}
+
+.option {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, .08);
+  background: rgba(255, 255, 255, .015);
+  transition: transform .08s ease, border-color .2s ease, background .2s ease;
+}
+
+.option:hover {
+  transform: translateY(-1px);
+  border-color: rgba(124, 157, 255, .35)
+}
+
+.option input {
+  margin-top: 3px;
+  transform: scale(1.15)
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: 14px;
+}
+
+.btn {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform .08s ease, filter .2s ease, background .2s ease, box-shadow .2s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .25);
+}
+
+.btn:active {
+  transform: translateY(1px)
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #061226
+}
+
+.btn-secondary {
+  background: #202a57;
+  color: #e6ebff;
+  border: 1px solid rgba(255, 255, 255, .12)
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #c7cff9;
+  border: 1px dashed rgba(255, 255, 255, .18)
+}
+
+.site-footer {
+  text-align: center;
+  color: var(--muted);
+  margin: 8px 0 24px;
+}
+
+/* Hasil */
+.score {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.score-ring {
+  position: relative;
+  width: 120px;
+  height: 120px
+}
+
+.circular-chart {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #25305b;
+  stroke-width: 2.8;
+}
+
+.circle {
+  fill: none;
+  stroke: url(#grad);
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  transition: stroke-dasharray .8s ease
+}
+
+.score-text {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.score-detail p {
+  margin: 4px 0
+}
+
+.correct-label {
+  border-color: rgba(80, 227, 164, .5) !important
+}
+
+.incorrect-label {
+  border-color: rgba(255, 107, 107, .5) !important
+}
+
+/* Pembahasan inline di setiap soal */
+.ex-inline {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, .08);
+  background: linear-gradient(180deg, rgba(255, 255, 255, .025), rgba(255, 255, 255, .01));
+}
+
+.ex-inline h4 {
+  margin: 0 0 6px;
+  font-size: 15px
+}
+
+.ex-inline p {
+  margin: 6px 0;
+  color: #e8ebff
+}
+
+.badge {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge.ok {
+  background: rgba(80, 227, 164, .14);
+  color: #bff5de;
+  border: 1px solid rgba(80, 227, 164, .45)
+}
+
+.badge.no {
+  background: rgba(255, 107, 107, .14);
+  color: #ffd2d2;
+  border: 1px solid rgba(255, 107, 107, .45)
+}
+
+.hidden {
+  display: none
+}

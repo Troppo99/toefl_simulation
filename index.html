@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Latihan TOEFL: Grammar & Reading</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="bg-shapes" aria-hidden="true"></div>
+
+  <main class="app-root">
+    <!-- Panel header yang di-freeze -->
+    <header class="top-panel card">
+      <div class="site-header">
+        <h1>Latihan TOEFL</h1>
+        <p>Grammar & Reading Comprehension</p>
+      </div>
+
+      <div class="intro-grid">
+        <div>
+          <h2>Instruksi</h2>
+          <ul class="checklist">
+            <li>Jawab semua soal, lalu tekan <strong>Kumpulkan Jawaban</strong>.</li>
+            <li>Skor dan pembahasan akan tampil pada setiap soal setelah pengumpulan.</li>
+            <li>Kamu dapat meninjau jawabanmu di layar hasil.</li>
+          </ul>
+        </div>
+        <div class="meta">
+          <div class="meta-pill">Total Soal: <span id="total-questions">15</span></div>
+          <div class="meta-pill">Bagian: Grammar & Reading</div>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div id="progress-bar" class="progress-bar" style="width:0%"></div>
+      </div>
+      <p class="progress-text"><span id="answered-count">0</span> terjawab dari <span id="total-count">15</span></p>
+    </header>
+
+    <!-- Area konten yang scroll -->
+    <section class="scroll-area">
+      <form id="quiz-form" class="card">
+        <div id="questions"></div>
+
+        <div class="actions">
+          <button type="button" id="btn-submit" class="btn btn-primary">Kumpulkan Jawaban</button>
+          <button type="button" id="btn-reset" class="btn btn-ghost" title="Kosongkan semua jawaban">Reset</button>
+        </div>
+      </form>
+
+      <section id="results" class="card" hidden>
+        <h2>Hasil</h2>
+        <div class="score">
+          <div class="score-ring">
+            <svg viewBox="0 0 36 36" class="circular-chart">
+              <path class="circle-bg" d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831" />
+              <path id="score-circle" class="circle" stroke-dasharray="0, 100" d="
+                M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831" />
+            </svg>
+            <div class="score-text">
+              <span id="score-value">0</span>/<span id="score-total">15</span>
+            </div>
+          </div>
+          <div class="score-detail">
+            <p><strong>Persentase:</strong> <span id="score-percent">0%</span></p>
+            <p><strong>Waktu:</strong> <span id="elapsed-time">00:00</span></p>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="button" id="btn-try-again" class="btn btn-secondary">Coba Lagi</button>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>Selamat belajar, tetap semangat. 🚀</p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
