@@ -29,7 +29,7 @@
           </ul>
         </div>
         <div class="meta">
-          <div class="meta-pill">Total Soal: <span id="total-questions">15</span></div>
+          <div class="meta-pill">Total Soal: <span id="total-questions">0</span></div>
           <div class="meta-pill">Bagian: Grammar & Reading</div>
         </div>
       </div>
@@ -37,17 +37,22 @@
       <div class="progress">
         <div id="progress-bar" class="progress-bar" style="width:0%"></div>
       </div>
-      <p class="progress-text"><span id="answered-count">0</span> terjawab dari <span id="total-count">15</span></p>
+      <p class="progress-text"><span id="answered-count">0</span> terjawab dari <span id="total-count">0</span></p>
     </header>
 
     <!-- Area konten yang scroll -->
     <section class="scroll-area">
       <form id="quiz-form" class="card">
+        <div id="loader" class="loader">Memuat soal…</div>
+        <div id="load-error" class="load-error hidden">
+          Gagal memuat <code>file</code>. Pastikan file tersedia dan jalankan melalui server lokal.
+        </div>
         <div id="questions"></div>
 
         <div class="actions">
-          <button type="button" id="btn-submit" class="btn btn-primary">Kumpulkan Jawaban</button>
-          <button type="button" id="btn-reset" class="btn btn-ghost" title="Kosongkan semua jawaban">Reset</button>
+          <button type="button" id="btn-submit" class="btn btn-primary" disabled>Kumpulkan Jawaban</button>
+          <button type="button" id="btn-reset" class="btn btn-ghost" title="Kosongkan semua jawaban"
+            disabled>Reset</button>
         </div>
       </form>
 
@@ -65,7 +70,7 @@
                 a 15.9155 15.9155 0 0 1 0 -31.831" />
             </svg>
             <div class="score-text">
-              <span id="score-value">0</span>/<span id="score-total">15</span>
+              <span id="score-value">0</span>/<span id="score-total">0</span>
             </div>
           </div>
           <div class="score-detail">

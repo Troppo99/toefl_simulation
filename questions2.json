@@ -1,0 +1,101 @@
+{
+  "grammar": {
+    "questions": [
+      {
+        "q": "Hardly ______ the data when the server crashed.",
+        "options": ["we finished backing up", "had we finished backing up", "we had finished backing up", "did we finished backing up"],
+        "correct": 1,
+        "explain": "After 'Hardly' at the beginning, use inversion with past perfect: 'Hardly had + subject + V3 ...'."
+      },
+      {
+        "q": "The director insists that every intern ______ the safety guidelines before entering the lab.",
+        "options": ["reads", "read", "to read", "reading"],
+        "correct": 1,
+        "explain": "Mandative subjunctive after verbs like insist/suggest/recommend uses the base form: 'that ... read'."
+      },
+      {
+        "q": "If the team ______ more time, they would have refined the prototype.",
+        "options": ["has had", "had", "had had", "would have"],
+        "correct": 2,
+        "explain": "Conditional Type 3 for past unreal: 'If + had + V3, would have + V3'. Here: 'had had'."
+      },
+      {
+        "q": "Only by reducing costs ______ increase our market share this quarter.",
+        "options": ["the company can", "can the company", "the company could", "could the company to"],
+        "correct": 1,
+        "explain": "Fronted 'Only by ...' triggers inversion with modal: 'can the company'."
+      },
+      {
+        "q": "Each of the proposals ______ reviewed by the committee yesterday.",
+        "options": ["were", "have been", "was", "are"],
+        "correct": 2,
+        "explain": "Subject is 'Each' (singular), so simple past passive 'was reviewed'."
+      },
+      {
+        "q": "The results were different from ______ we had predicted.",
+        "options": ["that", "which", "what", "those"],
+        "correct": 2,
+        "explain": "'What' = 'the thing(s) that)'. The clause 'what we had predicted' is correct here."
+      },
+      {
+        "q": "The CEO, as well as her advisors, ______ to announce the new policy at noon.",
+        "options": ["plan", "plans", "are planning", "have planned"],
+        "correct": 1,
+        "explain": "Agreement follows the head noun 'CEO' (singular). Phrases like 'as well as' do not change number."
+      },
+      {
+        "q": "We are looking forward to ______ you at the conference.",
+        "options": ["see", "seeing", "have seen", "to see"],
+        "correct": 1,
+        "explain": "After 'look forward to', use a gerund: 'to seeing'. The 'to' here is a preposition."
+      },
+      {
+        "q": "The more carefully you document your process, ______ likely you are to avoid errors.",
+        "options": ["the most", "the more", "more", "most"],
+        "correct": 1,
+        "explain": "Correlative comparative pattern: 'The more X, the more Y'."
+      },
+      {
+        "q": "No sooner ______ the meeting than the power went out.",
+        "options": ["we began", "did we begin", "we had begun", "have we begun"],
+        "correct": 1,
+        "explain": "With 'No sooner' at clause-initial position, use inversion with 'did' + base verb: 'did we begin'."
+      }
+    ]
+  },
+  "reading": {
+    "passage": "<p class=\"passage\">Urban heat islands occur when cities experience higher temperatures than nearby rural areas. Dense concentrations of buildings and pavement absorb and re-emit the sun's heat more than natural landscapes do. As climate change intensifies heat waves, many cities are seeking cost-effective strategies to reduce surface and air temperatures while improving residents' health.</p><p class=\"passage\">Expanding tree canopy is one widely recommended approach. Shade from mature trees can lower surrounding temperatures several degrees, reduce energy demand for cooling, and filter air pollutants. However, benefits are not evenly distributed. Neighborhoods with lower tree coverage often overlap with areas of economic disadvantage, where residents may face higher exposure to heat-related risks. Effective urban forestry programs therefore combine targeted planting, long-term maintenance plans, and community engagement to ensure trees survive and benefits persist.</p>",
+    "questions": [
+      {
+        "q": "What is the primary cause of urban heat islands mentioned in the passage?",
+        "options": ["Higher levels of greenhouse gases in cities", "Buildings and pavement absorbing and re-emitting heat", "Lack of rainfall in urban regions", "Increased traffic congestion"],
+        "correct": 1,
+        "explain": "The passage states that dense concentrations of buildings and pavement absorb and re-emit heat more than natural landscapes."
+      },
+      {
+        "q": "Which benefit of expanding tree canopy is NOT mentioned?",
+        "options": ["Lowering local temperatures", "Reducing air pollution", "Increasing biodiversity of soil microbes", "Reducing energy demand for cooling"],
+        "correct": 2,
+        "explain": "The text mentions temperature reduction, air filtering, and reduced energy demand. Soil microbe biodiversity is not discussed."
+      },
+      {
+        "q": "Why are some communities more exposed to heat-related risks?",
+        "options": ["They are located at higher elevations", "They have fewer parks but more lakes", "They have lower tree coverage and economic disadvantages", "They receive excessive rainfall"],
+        "correct": 2,
+        "explain": "The passage notes that low tree coverage often overlaps with economically disadvantaged areas, increasing exposure to heat."
+      },
+      {
+        "q": "According to the passage, what makes an urban forestry program effective?",
+        "options": ["Planting as many trees as possible regardless of location", "Targeted planting, maintenance plans, and community engagement", "Relying solely on volunteers for maintenance", "Focusing only on downtown districts"],
+        "correct": 1,
+        "explain": "The passage highlights targeted planting, long-term maintenance, and community engagement as key to sustained benefits."
+      },
+      {
+        "q": "What broader trend increases the urgency of mitigating urban heat islands?",
+        "options": ["Declining fuel prices", "Shorter summers", "Intensifying heat waves linked to climate change", "Decreasing city populations"],
+        "correct": 2,
+        "explain": "The first paragraph connects climate change with intensifying heat waves, increasing urgency for mitigation."
+      }
+    ]
+  }
+}

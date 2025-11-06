@@ -1,0 +1,101 @@
+{
+  "grammar": {
+    "questions": [
+      {
+        "q": "Only Nana after the lights went out ______ the key on the floor.",
+        "options": ["she noticed", "did she notice", "she had noticed", "has she noticed"],
+        "correct": 1,
+        "explain": "Inversion after limiting adverbials: 'Only after' causes auxiliary + subject + base verb, so 'did she notice'."
+      },
+      {
+        "q": "Had he known the traffic would be this bad, he ______ earlier.",
+        "options": ["would leave", "left", "would have left", "had left"],
+        "correct": 2,
+        "explain": "Conditional Type 3 in inverted form: 'Had + subject + past participle, ... would have + V3'. Type 3 describes past unreal situations."
+      },
+      {
+        "q": "Neither the manager nor the assistants ______ available at the moment.",
+        "options": ["is", "are", "has", "have"],
+        "correct": 1,
+        "explain": "With 'neither ... nor ...', agreement follows the noun closest to the verb. 'assistants' is plural, so 'are'."
+      },
+      {
+        "q": "The proposal, along with several attachments, ______ sent yesterday.",
+        "options": ["is", "are", "was", "were"],
+        "correct": 2,
+        "explain": "Head subject is singular 'proposal'. Phrases like 'along with' do not change agreement. Use 'was'."
+      },
+      {
+        "q": "By the time the conference starts next week, we ______ the final report.",
+        "options": ["will finish", "will have finished", "are finishing", "have finished"],
+        "correct": 1,
+        "explain": "Future perfect shows completion before a future point: 'will have finished'."
+      },
+      {
+        "q": "Not until last year ______ to expand to overseas markets.",
+        "options": ["the company decided", "did the company decide", "has the company decided", "the company had decided"],
+        "correct": 1,
+        "explain": "Fronted negative adverbial 'Not until' requires inversion: auxiliary + subject + base verb."
+      },
+      {
+        "q": "The committee recommends that each member ______ the code of conduct carefully.",
+        "options": ["reads", "read", "to read", "reading"],
+        "correct": 1,
+        "explain": "Mandative subjunctive after recommend, suggest, insist: base form for all subjects, so 'read'."
+      },
+      {
+        "q": "If she ______ more patient, she might solve the puzzle.",
+        "options": ["were", "was", "is", "has been"],
+        "correct": 0,
+        "explain": "Conditional Type 2 for present unreal. 'Were' is preferred with all subjects in formal English."
+      },
+      {
+        "q": "Seldom ______ such a clear example of market failure.",
+        "options": ["we see", "do we see", "we have seen", "are we seeing"],
+        "correct": 1,
+        "explain": "Initial 'Seldom' triggers inversion: 'do we see'."
+      },
+      {
+        "q": "Having ______ the dataset twice, the team proceeded to modeling.",
+        "options": ["cleaned", "cleaning", "to clean", "clean"],
+        "correct": 0,
+        "explain": "Perfect participle clause indicates prior completion: 'Having cleaned ... then proceeded ...'."
+      }
+    ]
+  },
+  "reading": {
+    "passage": "<p class=\"passage\">Although battery technology has improved rapidly in the past decade, charging time remains a critical bottleneck for mass adoption of electric vehicles. Researchers are exploring new electrode materials and electrolytes that allow faster ion transport without compromising safety. However, scaling laboratory breakthroughs to commercial production often reveals trade-offs, such as increased cost or reduced cycle life.</p><p class=\"passage\">One promising avenue is solid-state batteries, which replace liquid electrolytes with solid materials. These designs can potentially increase energy density and reduce fire risk. Yet, challenges persist, including maintaining stable interfaces between electrodes and electrolytes during repeated charging cycles. Until those challenges are resolved, manufacturers are likely to combine incremental chemistry gains with smarter thermal management and charging algorithms to deliver practical performance improvements.</p>",
+    "questions": [
+      {
+        "q": "What is identified as a major barrier to widespread EV adoption?",
+        "options": ["High vehicle weight", "Charging time", "Limited color options", "Excess battery warranties"],
+        "correct": 1,
+        "explain": "The passage states that charging time remains a critical bottleneck to mass adoption."
+      },
+      {
+        "q": "Why do some lab breakthroughs fail at commercial scale?",
+        "options": ["They always require rare earth metals", "They violate environmental regulations", "Trade-offs appear, such as higher costs or lower cycle life", "They cannot be patented"],
+        "correct": 2,
+        "explain": "Scaling to production reveals trade-offs like cost increase or reduced cycle life."
+      },
+      {
+        "q": "What potential advantage do solid-state batteries offer?",
+        "options": ["Guaranteed zero maintenance", "Higher energy density and lower fire risk", "Infinite cycle life", "Instant charging to 100 percent"],
+        "correct": 1,
+        "explain": "Solid-state designs may increase energy density and reduce fire risk."
+      },
+      {
+        "q": "What challenge must be addressed for solid-state batteries to succeed?",
+        "options": ["Reducing the number of electrodes to one", "Stabilizing interfaces during repeated charging cycles", "Eliminating electrolytes entirely", "Using only aluminum conductors"],
+        "correct": 1,
+        "explain": "Maintaining stable interfaces between electrodes and electrolytes during cycling is highlighted as a key challenge."
+      },
+      {
+        "q": "What near-term strategy do manufacturers likely adopt?",
+        "options": ["Abandoning EVs in favor of hydrogen only", "Waiting for a single dramatic breakthrough", "Combining modest chemistry gains with smarter thermal control and charging algorithms", "Using lower-capacity batteries to reduce risks"],
+        "correct": 2,
+        "explain": "Until major challenges are solved, incremental chemistry improvements plus control algorithms are expected."
+      }
+    ]
+  }
+}
