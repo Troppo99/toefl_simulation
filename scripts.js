@@ -37,7 +37,7 @@ fetchQuestions();
 // ==============================
 async function fetchQuestions(){
   try{
-    const res = await fetch("questions2.json", {cache:"no-store"});
+    const res = await fetch("questions3.json", {cache:"no-store"});
     if(!res.ok) throw new Error("HTTP " + res.status);
     const data = await res.json();
 

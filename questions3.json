@@ -1,0 +1,101 @@
+{
+  "grammar": {
+    "questions": [
+      {
+        "q": "Hardly _____ the announcement finished when the audience began to applaud.",
+        "options": ["did the speaker finish", "the speaker finished", "had the speaker finished", "has the speaker finished"],
+        "correct": 3,
+        "explain": "Pola inversi setelah 'Hardly' membutuhkan past perfect + inversi: 'had the speaker finished'."
+      },
+      {
+        "q": "The committee insisted that the proposal _____ revised before the next meeting.",
+        "options": ["is", "be", "was", "has been"],
+        "correct": 2,
+        "explain": "Setelah verb of suggestion 'insist' dalam struktur subjunctive, gunakan base form: 'be revised'."
+      },
+      {
+        "q": "The painting, along with several sketches, _____ to the museum last week.",
+        "options": ["were donated", "was donated", "have donated", "donated"],
+        "correct": 2,
+        "explain": "Subjek inti 'The painting' tunggal. Frasa 'along with...' tidak memengaruhi agreement. Gunakan 'was donated'."
+      },
+      {
+        "q": "Only after careful analysis _____ a clear pattern in the data.",
+        "options": ["the researchers discovered", "did the researchers discover", "the researchers had discovered", "were the researchers discovering"],
+        "correct": 2,
+        "explain": "Inversi diperlukan setelah 'Only after...': 'did the researchers discover'."
+      },
+      {
+        "q": "Jessica is one of the students who _____ the scholarship this year.",
+        "options": ["has received", "have received", "receives", "is receiving"],
+        "correct": 2,
+        "explain": "Klausa relatif 'who' merujuk ke 'students' jamak. Gunakan 'have received'."
+      },
+      {
+        "q": "Not until the lights returned _____ how crowded the hall was.",
+        "options": ["we realized", "did we realize", "we had realized", "we were realizing"],
+        "correct": 2,
+        "explain": "Setelah 'Not until' gunakan inversi: 'did we realize'."
+      },
+      {
+        "q": "Had he known the road was closed, he _____ an alternative route.",
+        "options": ["would take", "will have taken", "would have taken", "had taken"],
+        "correct": 3,
+        "explain": "Kondisional ketiga: 'Had he known..., he would have taken...'."
+      },
+      {
+        "q": "The new device is not only compact but also more durable _____ its predecessors.",
+        "options": ["than", "as", "like", "to"],
+        "correct": 1,
+        "explain": "Perbandingan menggunakan 'more... than'."
+      },
+      {
+        "q": "Researchers are trying to determine the extent _____ social media influences voting behavior.",
+        "options": ["which", "to which", "that", "of which"],
+        "correct": 2,
+        "explain": "Konstruksi benar adalah 'the extent to which...'."
+      },
+      {
+        "q": "The professor had the students _____ the article before the discussion.",
+        "options": ["to summarize", "summarized", "summarize", "summarizing"],
+        "correct": 3,
+        "explain": "Causative 'have + object + bare infinitive': 'had the students summarize'."
+      }
+    ]
+  },
+  "reading": {
+    "passage": "<p class=\"passage\">Cities tend to be warmer than their surrounding rural areas, a phenomenon known as the urban heat island. Concrete and asphalt absorb heat during the day and release it slowly at night, keeping temperatures elevated after sunset. Limited vegetation reduces shade and evapotranspiration, both of which naturally cool the air.</p><p class=\"passage\">Urban heat islands have consequences beyond discomfort. Higher nighttime temperatures increase energy demand for cooling, which can strain electrical grids during heat waves. They also worsen air quality, since stagnant, warm air fosters the formation of ground-level ozone. Vulnerable populations, including older adults and outdoor workers, face disproportionate health risks when extreme heat persists.</p><p class=\"passage\">Cities are experimenting with mitigation strategies. Planting street trees and expanding parks can lower neighborhood temperatures by several degrees. Cool roofs, which reflect more sunlight, and permeable, lighter-colored pavements help reduce heat absorption. Some municipalities encourage green roofs that add insulation and create habitats for pollinators. While no single solution eliminates heat islands, combining measures and targeting the hottest neighborhoods often yields the most meaningful benefits.</p>",
+    "questions": [
+      {
+        "q": "What is the primary reason cities remain warm after sunset according to the passage?",
+        "options": ["Higher levels of traffic at night keep air moving", "Concrete and asphalt release stored heat slowly", "Streetlights emit significant radiant heat", "Tall buildings block cool winds during the day"],
+        "correct": 2,
+        "explain": "Teks menyebut beton dan aspal menyimpan panas lalu melepasnya perlahan pada malam hari."
+      },
+      {
+        "q": "Which of the following is NOT mentioned as a consequence of urban heat islands?",
+        "options": ["Increased energy demand", "Improved wintertime heating efficiency", "Worsened air quality", "Health risks for vulnerable groups"],
+        "correct": 2,
+        "explain": "Efisiensi pemanasan saat musim dingin tidak dibahas. Tiga opsi lain disebutkan eksplisit."
+      },
+      {
+        "q": "The word \"stagnant\" in the second paragraph is closest in meaning to:",
+        "options": ["polluted", "still", "humid", "dense"],
+        "correct": 2,
+        "explain": "'Stagnant' berarti tidak bergerak atau diam, sehingga pembentukan ozon meningkat."
+      },
+      {
+        "q": "According to the passage, which approach is presented as most effective?",
+        "options": ["Implementing a single citywide solution", "Focusing on winter mitigation first", "Combining multiple measures and targeting hot spots", "Replacing all asphalt with concrete"],
+        "correct": 3,
+        "explain": "Paragraf terakhir menegaskan kombinasi langkah dan fokus pada area terpanas paling berdampak."
+      },
+      {
+        "q": "Green roofs are suggested primarily because they can:",
+        "options": ["increase nighttime electricity generation", "provide insulation and support urban biodiversity", "eliminate the need for air conditioning", "prevent all ozone formation"],
+        "correct": 2,
+        "explain": "Teks menyebut green roofs menambah insulasi dan menciptakan habitat untuk penyerbuk."
+      }
+    ]
+  }
+}
